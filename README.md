@@ -1,10 +1,10 @@
 # nuxt-portfolio
 
-> my portfolio
+> my personal portfolio :)
 
 ## Build Setup
 
-``` bash
+```bash
 # install dependencies
 $ npm run install
 
