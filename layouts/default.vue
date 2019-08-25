@@ -23,7 +23,7 @@
       <!-- <v-btn icon @click.stop="fixed = !fixed">
         <v-icon>mdi-minus</v-icon>
       </v-btn>-->
-      <v-toolbar-title v-text="title" />
+      <v-toolbar-title class="title" v-text="title" />
       <v-spacer />
       <!-- <v-btn icon @click.stop="rightDrawer = !rightDrawer">
         <v-icon>mdi-menu</v-icon>
@@ -56,6 +56,12 @@
     </v-footer>
   </v-app>
 </template>
+
+<style scoped>
+.title {
+  font-family: "roboto mono" !important;
+}
+</style>
 
 <script>
 export default {
