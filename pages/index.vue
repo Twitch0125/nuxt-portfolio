@@ -2,11 +2,11 @@
   <v-layout column justify-center align-center>
     <h1 class="text-center headline mb-6">My Work</h1>
     <v-container fluid xs12 sm8 md6>
-      <v-row>
-        <v-col cols="12">
+      <v-row align="center" justify="center">
+        <v-col cols="9">
           <v-row align="center" justify="center" style="height: 300px">
-            <v-card :key="i+1" v-for="(thing, i) in things" class="mx-auto">
-              <v-row class="py-4 pl-4">
+            <v-card :key="i+1" v-for="(thing, i) in things" class="ma-4">
+              <v-row class="pl-4">
                 <v-col class="shrink">
                   <v-img
                     height="200"
@@ -48,7 +48,7 @@
 export default {
   data() {
     return {
-      things: [{}, {}, {}, {}, {}]
+      things: [{}, {}, {}, {}, {}, {}]
     };
   },
   components: {}
