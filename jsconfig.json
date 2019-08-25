@@ -8,6 +8,5 @@
       "@@/*": ["./*"]
     }
   },
-  "exclude": ["node_modules", ".nuxt", "dist"],
-  "CLOUD_BUCKET": "twitch0125-portfolio"
+  "exclude": ["node_modules", ".nuxt", "dist"]
 }
