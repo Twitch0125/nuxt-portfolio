@@ -17,20 +17,8 @@
                 <v-col class="text-center">
                   <v-container class="pa-0">
                     <v-row>
-                      <v-col>
-                        <v-btn icon>
-                          <v-icon>mdi-heart</v-icon>
-                        </v-btn>
-                      </v-col>
-                      <v-col>
-                        <v-btn icon>
-                          <v-icon>mdi-bookmark</v-icon>
-                        </v-btn>
-                      </v-col>
-                      <v-col>
-                        <v-btn icon>
-                          <v-icon>mdi-share-variant</v-icon>
-                        </v-btn>
+                      <v-col class="mx-2">
+                        <v-card-text>text goes here for descriptionstext goes here for descriptionstext goes here for descriptionstext goes here for descriptions</v-card-text>
                       </v-col>
                     </v-row>
                   </v-container>
@@ -43,6 +31,12 @@
     </v-container>
   </v-layout>
 </template>
+
+<style>
+.myWrap {
+  overflow-wrap: break-word;
+}
+</style>
 
 <script>
 export default {

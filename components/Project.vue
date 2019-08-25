@@ -2,25 +2,13 @@
   <v-card class="ma-4">
     <v-row class="pl-4">
       <v-col class="shrink">
-        <v-img height="200" width="200" src="https://cdn.vuetifyjs.com/images/cards/store.jpg"></v-img>
+        <v-img height="200" width="200" :src="image"></v-img>
       </v-col>
       <v-col class="text-center">
-        <v-container class="pa-0">
+        <v-container class="mx-2">
           <v-row>
             <v-col>
-              <v-btn icon>
-                <v-icon>mdi-heart</v-icon>
-              </v-btn>
-            </v-col>
-            <v-col>
-              <v-btn icon>
-                <v-icon>mdi-bookmark</v-icon>
-              </v-btn>
-            </v-col>
-            <v-col>
-              <v-btn icon>
-                <v-icon>mdi-share-variant</v-icon>
-              </v-btn>
+              <p>text goes here</p>
             </v-col>
           </v-row>
         </v-container>
