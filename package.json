@@ -11,8 +11,7 @@
     "generate": "nuxt generate"
   },
   "dependencies": {
-    "@google-cloud/storage": "^3.2.0",
-    "@nuxtjs/axios": "^5.3.6",
+    "@nuxtjs/axios": "^5.6.0",
     "nuxt": "^2.0.0"
   },
   "devDependencies": {
