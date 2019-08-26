@@ -8,7 +8,7 @@
             <v-card
               max-width="600"
               :hover="hover"
-              :key="i+1"
+              :key="i"
               v-for="(thing, i) in things"
               class="ma-4"
             >
@@ -30,8 +30,11 @@
                     <v-row>
                       <v-col class="mx-2">
                         <v-card-actions>
-                          <v-btn depressed color="secondary">Github</v-btn>
-                          <v-btn depressed color="accent">View Project</v-btn>
+                          <v-btn color="secondary">
+                            Github
+                            <v-icon>mdi-github-circle</v-icon>
+                          </v-btn>
+                          <v-btn text color="accent">View Project</v-btn>
                         </v-card-actions>
                       </v-col>
                     </v-row>
@@ -47,6 +50,7 @@
 </template>
 
 <style>
+@import url("https://fonts.googleapis.com/css?family=Roboto+Mono&display=swap");
 .myWrap {
   overflow-wrap: break-word;
 }
