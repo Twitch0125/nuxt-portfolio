@@ -5,7 +5,13 @@
       <v-row align="center" justify="center">
         <v-col cols="9">
           <v-row align="center" justify="center" style="height: 300px">
-            <v-card :key="i+1" v-for="(thing, i) in things" class="ma-4">
+            <v-card
+              max-width="600"
+              :hover="hover"
+              :key="i+1"
+              v-for="(thing, i) in things"
+              class="ma-4"
+            >
               <v-row class="pl-4">
                 <v-col class="shrink">
                   <v-img
@@ -19,6 +25,14 @@
                     <v-row>
                       <v-col class="mx-2">
                         <v-card-text>text goes here for descriptionstext goes here for descriptionstext goes here for descriptionstext goes here for descriptions</v-card-text>
+                      </v-col>
+                    </v-row>
+                    <v-row>
+                      <v-col class="mx-2">
+                        <v-card-actions>
+                          <v-btn depressed color="secondary">Github</v-btn>
+                          <v-btn depressed color="accent">View Project</v-btn>
+                        </v-card-actions>
                       </v-col>
                     </v-row>
                   </v-container>
@@ -40,9 +54,24 @@
 
 <script>
 export default {
+  computed: {},
+  // methods: {
+  //   getImg(path) {
+  //     return require(path);
+  //   }
+  // },
   data() {
     return {
+      hover: true,
       things: [{}, {}, {}, {}, {}, {}]
+      // images: [
+      //   { url: "../assets/burgers.jpg" },
+      //   { url: "../assets/chat.png" },
+      //   { url: "../assets/ecommerce.png" },
+      //   { url: "../assets/golfscorecard.png" },
+      //   { url: "../assets/todoapp.png" },
+      //   { url: "../assets/userManager.png" }
+      // ]
     };
   },
   components: {}
